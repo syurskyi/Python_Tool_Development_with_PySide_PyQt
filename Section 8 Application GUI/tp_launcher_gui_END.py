@@ -130,7 +130,7 @@ class TP_Launcher_GUI(QtWidgets.QWidget):
         ## CHANGE TO YOUR COMPUTER PATHS
         app1 = r'C:\Program Files (x86)\Google\Chrome\Application\Chrome.exe'
         icon1 = r'C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\VisualElements\smalllogo.png'
-        app2 = r'D:\Program Files (x86)\Mozilla Firefox\firefox.exe'
+        app2 = r'C:\Program Files\Mozilla Firefox\firefox.exe'
         self._tp_launcher.add_workspace(ws1)
         self._tp_launcher.add_app(ws1, app1, icon1)
         self._tp_launcher.add_app(ws1, app2, None)
