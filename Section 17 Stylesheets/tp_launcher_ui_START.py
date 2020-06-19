@@ -138,7 +138,7 @@ class TP_Launcher_GUI(QtWidgets.QWidget):
         add_del_l = QtWidgets.QHBoxLayout()
 
         self._add_btn = QtWidgets.QPushButton('Add')
-        self._add_btn.setMaximumSize(QtCore.QSize(60,23))
+        self._add_btn.setMaximumSize(QtCore.QSize(60, 23))
         add_menu = QtWidgets.QMenu(self)
         add_menu.addAction('Workspace', self._add_workspace)
         add_menu.addAction('App or File', self._add_app)
@@ -148,7 +148,7 @@ class TP_Launcher_GUI(QtWidgets.QWidget):
         self._del_btn.setText('Delete')
         self._del_btn.setAcceptDrops(True)
         self._del_btn.setIcon(self._icons.icon(self._icons.Trashcan))
-        self._del_btn.setIconSize(QtCore.QSize(32,32))
+        self._del_btn.setIconSize(QtCore.QSize(32, 32))
         self._del_btn.setFlat(True)
 
         add_del_l.addWidget(self._add_btn)
@@ -331,7 +331,7 @@ class TP_Launcher_GUI(QtWidgets.QWidget):
             self._populate_workspaces()
             index = self._workspace_cb.findText(cws)
             self._workspace_cb.setCurrentIndex(index)
-            self.move(x,y)
+            self.move(x, y)
         else:
             self._tp_launcher.add_workspace('Default_WS')
             self._populate_workspaces()
